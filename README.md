@@ -114,8 +114,8 @@
       The first three platforms with the fractal floating above are intended to teach players the functions of white/black buttons. 
       (click to read more)
     </summary>
-  
-    ![design](/demoImages/design.png)
+
+    ![design] (https://raw.githubusercontent.com/jxu443/GameDesign_Unity_illusionLevel/main/demoImages/design.png)
   
   </details> 
 
