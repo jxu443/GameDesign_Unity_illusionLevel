@@ -50,7 +50,7 @@
         The entire object is rotating with respect to time.
     </summary>(click to read more)</summary>
     
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/fractal.png?raw=true">
+    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/fractal.png">
   </details>
   
   ## 🌟  Math Graphs  <a id="event"></a>
@@ -62,9 +62,9 @@
         (click to read more)
     </summary>
     
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/MathMorph1.png?raw=true">
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/MathMorph2.png?raw=true">
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/MathMorph3.png?raw=true">
+    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/MathMorph1.png">
+    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/MathMorph2.png">
+    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/MathMorph3.png">
 
    </details>
   
@@ -77,7 +77,7 @@
         (click to read more)
     </summary>
     
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/maze.png?raw=true">
+    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/maze.png">
     
   </details> 
   
@@ -89,8 +89,8 @@
       (click to read more)
     </summary>
   
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/teleportal1.png?raw=true">
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/teleportal2.png?raw=true">
+    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/teleportal1.png">
+    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/teleportal2.png">
 
   </details> 
   
