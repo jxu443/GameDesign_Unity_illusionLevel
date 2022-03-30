@@ -1,6 +1,6 @@
 <p align="center"> 
+    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/cover.png">
     
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/cover.png?raw=true">
   <!--   <img src="https://icons-for-free.com/iconfiles/png/512/ant+design+++outlined+icons+block-1324441552634165667.png" alt="Logo" width="80px" height="80px"> -->
   </p>
   <h1 align="center"> CS4455/6457 Video Game Design</h1>
