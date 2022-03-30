@@ -65,7 +65,6 @@
     <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/MathMorph1.png">
     <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/MathMorph2.png">
     <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/MathMorph3.png">
-
    </details>
   
   ## 🌟  Maze <a id="timeline"></a>
@@ -114,8 +113,8 @@
       The first three platforms with the fractal floating above are intended to teach players the functions of white/black buttons. 
       (click to read more)
     </summary>
-
-    ![design] (https://raw.githubusercontent.com/jxu443/GameDesign_Unity_illusionLevel/main/demoImages/design.png)
+    
+    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/design.png">
   
   </details> 
 
