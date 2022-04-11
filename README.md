@@ -40,86 +40,58 @@
   
   
   # 📲 Features (Release 1.0) <a id="feature"></a>
-  All sections can be **_expanded_** to see the demo images!
   
   ## 🌟 Fractal <a id="post"></a>
-  <details>
-    <summary> 
-        Recursion. Cubes are created one by one with differnt sizes and positions. 
-        The creation process is delayer to show by using yield keyword.
-        The entire object is rotating with respect to time.
-    </summary>(click to read more)</summary>
-    
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/fractal.png">
-  </details>
+  Recursion. Cubes are created one by one with differnt sizes and positions. 
+  
+  The creation process is delayer to show by using yield keyword. The entire object is rotating with respect to time.
+  
+  <img src="demoImages/fractal.png" width="300">
   
   ## 🌟  Math Graphs  <a id="event"></a>
-  <details>
-    <summary>
-        Use mathematical functions to create six patterns: Wave, MultiWave, Ripple, Sphere, Torus. 
-        They are displayed random in order using n * n cubes and with morphed transition.
-        GUI controls resolution(n), function duration, and transition duration. 
-        (click to read more)
-    </summary>
-    
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/MathMorph1.png">
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/MathMorph2.png">
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/MathMorph3.png">
-   </details>
+  
+  Use mathematical functions to create six patterns: Wave, MultiWave, Ripple, Sphere, Torus. 
+  They are displayed random in order using n * n cubes and with morphed transition.
+  GUI controls resolution(n), function duration, and transition duration. 
+  
+  <img src="demoImages/MathMorph1.png" width="300"> <img src="demoImages/MathMorph2.png" width="300"> <img src="demoImages/MathMorph3.png" width="300"> 
+   
   
   ## 🌟  Maze <a id="timeline"></a>
-  <details>
-    <summary>
-        Maze is genereted recursively therefore is differnt every time. 
-        For a n * n maze, init it to be a n * n grid, visit every spot and randomly remove walls.
-        The data structures used includes stack, struct and enum. 
-        (click to read more)
-    </summary>
-    
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/maze.png">
-    
-  </details> 
-  
-  ## 🌟  Teleportal <a id="map"></a>
-  <details>
-  <summary>
-      The Non-euclidean element of the game. 
-      The player get transpoted between two worlds. One world can be seen from the gate of the other world. 
-      (click to read more)
-    </summary>
-  
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/teleportal1.png">
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/teleportal2.png">
 
-  </details> 
+  Maze is genereted recursively therefore is differnt every time. 
+    For a n * n maze, init it to be a n * n grid, visit every spot and randomly remove walls.
+    The data structures used includes stack, struct and enum. 
+    
+    <img src="demoImages/maze.png" width="300">
+    
+
+  ## 🌟  Teleportal <a id="map"></a>
+
+  The Non-euclidean element of the game. 
+  The player get transpoted between two worlds. One world can be seen from the gate of the other world.
   
-  
-  
+  <img src="demoImages/teleportal1.png" width="300"><img src="demoImages/teleportal2.png" width="300">
+
+ 
   ## 🌟  Shaders <a id="donation"></a>
   
-  <details>
-  <summary>
-    The color of the math graphs and the gate display of the teleportal. 
+ 
+  The color of the math graphs and the gate display of the teleportal. 
     Shader for math graphs relates color with position.
     Shader for teleportal renders camera view on plane. 
-  </summary>
-    
-  
-  </details> 
+
   
   ## 🌟  Design Principles <a id="faq"></a>
-  <details>
-  <summary> 
-      The first three platforms with the fractal floating above are intended to teach players the functions of white/black buttons. 
-      (click to read more)
-    </summary>
-    
-    <img src="https://github.com/jxu443/GameDesign_Unity_illusionLevel/blob/main/demoImages/design.png">
+
+  The first three platforms with the fractal floating above are intended to teach players the functions of white/black buttons. 
   
-  </details> 
+  <img src="demoImages/design.png" width="300">
 
   
   # 👨‍💻 Resources <a id="wiki"></a>
-  <p>Fractal, Math Graphs: [CatlikeCode](https://catlikecoding.com/unity/tutorials/) </p>
-  <p> Maze: [YouTube](https://www.youtube.com/watch?v=ya1HyptE5uc&t=346s) Tutorial By Sandeep Nambiar </p>
-  <p> Teleportal: [YouTube](https://www.youtube.com/watch?v=cuQao3hEKfs&t=19s&ab_channel=Brackeys) by Brackeys </p>
+  Fractal, Math Graphs: [CatlikeCode](https://catlikecoding.com/unity/tutorials/) 
+  
+  Maze: [YouTube](https://www.youtube.com/watch?v=ya1HyptE5uc&t=346s) Tutorial By Sandeep Nambiar 
+  
+  Teleportal: [YouTube](https://www.youtube.com/watch?v=cuQao3hEKfs&t=19s&ab_channel=Brackeys) by Brackeys 
