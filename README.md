@@ -63,7 +63,7 @@
     For a n * n maze, init it to be a n * n grid, visit every spot and randomly remove walls.
     The data structures used includes stack, struct and enum. 
     
-    <img src="demoImages/maze.png" width="300">
+  <img src="demoImages/maze.png" width="300">
     
 
   ## 🌟  Teleportal <a id="map"></a>
@@ -75,7 +75,6 @@
 
  
   ## 🌟  Shaders <a id="donation"></a>
-  
  
   The color of the math graphs and the gate display of the teleportal. 
     Shader for math graphs relates color with position.
