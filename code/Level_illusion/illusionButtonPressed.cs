@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using UnityEditor;
 
 public class illusionButtonPressed : MonoBehaviour
 {
@@ -25,7 +26,8 @@ public class illusionButtonPressed : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player") {
+        numOfContact++;
+        if (numOfContact <= 1) { // other.tag == "Player"
             targetAnimator.SetTrigger("ButtonPressed");
             if (function == 0) {
                 becomeRigid();
@@ -36,7 +38,8 @@ public class illusionButtonPressed : MonoBehaviour
     }
 
     void OnTriggerExit(Collider other) {
-        if (other.tag == "Player") { 
+        numOfContact--;
+        if (numOfContact <= 0) { 
             targetAnimator.ResetTrigger("ButtonPressed");
         }
     }
@@ -45,7 +48,8 @@ public class illusionButtonPressed : MonoBehaviour
         if (obj.GetComponent<Fractal>() != null) {
             obj.GetComponent<Fractal>().SetTrigger(false);
         } else {
-            obj.GetComponent<BoxCollider>().isTrigger = false;
+            Debug.Log("graph cubs becomes rigid");
+            obj.GetComponent<MathGraphMorph>().NotIsTrigger();
         }
         buttonAudioSource.clip = buttonAudioClip;
         buttonAudioSource.Play();

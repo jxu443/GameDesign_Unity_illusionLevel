@@ -12,6 +12,7 @@ public class Fractal : MonoBehaviour
     public int maxDepth = 4;
 
     public float childScale = 0.5f;
+    public bool ifFlipped = true;
 
     bool isAnimating = true;
     bool isTrigger = true;
@@ -37,13 +38,18 @@ public class Fractal : MonoBehaviour
 
     private IEnumerator createChildren(){
         yield return new WaitForSeconds(0.5f);
-        new GameObject("child").AddComponent<Fractal>().Initialize(this, Vector3.up);
+        new GameObject("child").AddComponent<Fractal>().Initialize(this, Vector3.down);
+        
         yield return new WaitForSeconds(0.5f);
-        new GameObject("child").AddComponent<Fractal>().Initialize(this, Vector3.left);
-
+        new GameObject("child").AddComponent<Fractal>().Initialize(this, Vector3.right);
     }
 
     private async void Initialize(Fractal parent, Vector3 direction) {
+        // if (ifFlipped) {
+        //     Debug.Log("flipped");
+        //     direction *= -1;
+        // }
+        //Debug.Log("when depth = " + depth + " direction is " + direction.x + ","  + direction.y);
         mesh = parent.mesh;
         material = parent.material;
         maxDepth = parent.maxDepth;

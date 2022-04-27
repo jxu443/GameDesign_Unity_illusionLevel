@@ -63,7 +63,7 @@ public class MazeGenerator
     private void IterativeBackTracker() {
         var rng = new System.Random();
         var position = new Position{X = rng.Next(0, width), Y = rng.Next(0, height)};
-        Debug.Log("init pos is " + position.X + " and " + position.Y);
+        //Debug.Log("init pos is " + position.X + " and " + position.Y);
         maze[position.X, position.Y] |= WallState.VISITED;
         var stack = new Stack<Position>();
         stack.Push(position);

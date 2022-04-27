@@ -14,21 +14,38 @@ public class MazeRender : MonoBehaviour
 
     [SerializeField]
     private Transform wallPrefab = null;
+    private float duration; 
+    float functionDuration = 20f; // change maze after 10s
+    int cnt; // how many times has reset
 
-    // Start is called before the first frame update
+    MazeGenerator gen;
+    
     void Start()
     {
-        MazeGenerator gen = new MazeGenerator(width, height);
-        var maze = gen.Generate();
-        DrawMaze(maze);
+        cnt = 0;
+        gen = new MazeGenerator(width, height);
+        DrawMaze(gen.Generate());
     }
 
     // Update is called once per frame
     void Update()
     {
+        duration += Time.deltaTime;
+        int currCnt = (int) (duration / functionDuration);
+        if (currCnt > cnt) {
+            Debug.Log("maze redraw");
+            cnt++;
+
+            //Debug.Log(transform.childCount);
+            while (transform.childCount > 0) {
+                DestroyImmediate(transform.GetChild(0).gameObject);
+            }
+            gen = new MazeGenerator(width, height);
+            DrawMaze(gen.Generate()); // lower the wall every time
+            float sy = transform.localScale.y * Mathf.Pow(0.8f, cnt);
+            transform.localScale = new Vector3(4, sy, 4);
+        }
         
-        //transform.position = new Vector3(10, 0, 0);
-        //transform.localScale = new Vector3(2, 1, 2);
     }
 
     private async void DrawMaze(WallState[,] maze) {
@@ -40,13 +57,13 @@ public class MazeRender : MonoBehaviour
                 if (cell.HasFlag(WallState.UP)) {
                     var wall = Instantiate(wallPrefab) as Transform;
                     wall.position = position + new Vector3(0, 0, 0.5f); 
-                    wall.SetParent(transform, false); // ***
+                    wall.SetParent(transform, false); 
                 }
                 if (cell.HasFlag(WallState.LEFT)) {
                     var wall = Instantiate(wallPrefab) as Transform;
                     wall.position = position + new Vector3(-0.5f, 0, 0); 
                     wall.eulerAngles = new Vector3(0, 90, 0);
-                    wall.SetParent(transform, false); // ***
+                    wall.SetParent(transform, false); 
                 }
                 
                 if (i == width -1) {
@@ -54,7 +71,7 @@ public class MazeRender : MonoBehaviour
                         var wall = Instantiate(wallPrefab) as Transform;
                         wall.position = position + new Vector3(0.5f, 0, 0);
                         wall.eulerAngles = new Vector3(0, 90, 0); 
-                        wall.SetParent(transform, false); // ***
+                        wall.SetParent(transform, false); 
                     }
                 }
 
@@ -62,7 +79,7 @@ public class MazeRender : MonoBehaviour
                     if (cell.HasFlag(WallState.DOWN)) {
                         var wall = Instantiate(wallPrefab) as Transform;
                         wall.position = position + new Vector3(0, 0, -0.5f); 
-                        wall.SetParent(transform, false); // ***
+                        wall.SetParent(transform, false); 
                     }
                 }
             }

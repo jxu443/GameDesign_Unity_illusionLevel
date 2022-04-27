@@ -12,6 +12,7 @@ public class MathGraphMorph : MonoBehaviour
     [SerializeField, Min(0f)]
 	float functionDuration = 1f, transitionDuration = 1f;
     public bool isAnimating = true;
+    public bool isTrigger;
     bool transitioning = false;
     
     Transform[] points;
@@ -30,6 +31,7 @@ public class MathGraphMorph : MonoBehaviour
             Transform point = points[i] = Instantiate(pointPrefab);
             point.localScale = scale;
 			point.SetParent(transform, false);
+
         } 
 
     }
@@ -71,12 +73,20 @@ public class MathGraphMorph : MonoBehaviour
                 points[i].localPosition = FunctionLibrary.Morph(u, v, time, 
                     FunctionLibrary.GetFunction(functionOld), f,  duration/transitionDuration);
             }
+            if (!isTrigger) {
+                points[i].GetComponent<Collider>().isTrigger = false;
+            }
         }
         }
     }
 
     public void toggleIsAnimating() {
         isAnimating = !isAnimating;
+    }
+
+    public void NotIsTrigger() {
+        Debug.Log("NotIsTrigger is called");
+        isTrigger = false;
     }
     
 }
